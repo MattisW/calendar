@@ -1,0 +1,18 @@
+<template name="home">
+    <div class="row">
+       {{#each calCell}}
+         {{> calCellSingle}}
+       {{/each}}
+      <br>
+      <div class="col-md-2 alert alert-info">
+        Selected Cell Number 
+        <span class="label label-danger">
+          <strong>{{selectedNumber}}</strong>
+        </span>
+      </div>
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Auswahl von <cite title="Source Title">Mattis Weiler</cite></footer>
+      </blockquote>
+    </div>
+</template>
